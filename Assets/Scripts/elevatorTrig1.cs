@@ -8,6 +8,6 @@ public class elevatorTrig1 : MonoBehaviour
     //loads scene when player walks into elevator trigger
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("IceLevel");
     }
 }
