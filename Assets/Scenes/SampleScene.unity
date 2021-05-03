@@ -461,6 +461,7 @@ GameObject:
   - component: {fileID: 67471752}
   - component: {fileID: 67471751}
   - component: {fileID: 67471754}
+  - component: {fileID: 67471755}
   m_Layer: 0
   m_Name: Hellhound
   m_TagString: Untagged
@@ -552,7 +553,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 67471750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.82, y: -1.12, z: 0}
+  m_LocalPosition: {x: 0.82, y: -1.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2086443401}
@@ -571,6 +572,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33a78aafaeb0c4d76ba3fda8b33a0d02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &67471755
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67471750}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a98a9bd7420c3bb4a99359adeffcd174, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &133058830
 GameObject:
   m_ObjectHideFlags: 0
@@ -6240,6 +6260,7 @@ GameObject:
   - component: {fileID: 588960476}
   - component: {fileID: 588960475}
   - component: {fileID: 588960474}
+  - component: {fileID: 588960478}
   m_Layer: 0
   m_Name: Helvator_2_0
   m_TagString: Untagged
@@ -6257,7 +6278,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.3019417, y: 0}
@@ -6357,6 +6378,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &588960478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588960473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81810c2e84cbca649b737a33fe06fe82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &608329278
 GameObject:
   m_ObjectHideFlags: 0
@@ -6685,6 +6718,7 @@ GameObject:
   - component: {fileID: 776539268}
   - component: {fileID: 776539267}
   - component: {fileID: 776539266}
+  - component: {fileID: 776539270}
   m_Layer: 0
   m_Name: Skeleton
   m_TagString: Untagged
@@ -6795,6 +6829,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &776539270
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776539265}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8e68df145863f894f8a058b6e97a8226, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &932658646
 GameObject:
   m_ObjectHideFlags: 0

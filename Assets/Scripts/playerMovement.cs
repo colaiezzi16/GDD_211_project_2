@@ -13,10 +13,12 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //get input
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-
+        //trigger walk anim
         animator.SetFloat("moveSpeed", Mathf.Abs(horizontalMove));
 
+        //set jump to true which is linked to player ocntroller and start jump anim
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
@@ -24,12 +26,14 @@ public class playerMovement : MonoBehaviour
         }
     }
 
+    //function to check ground event in test contoller and stop jump animation
     public void OnLanding()
     {
         animator.SetBool("IsJumping", false);
     
     }
 
+    //calls the move function from teh controller to allow the player to move and sets initial jump to flase
     private void FixedUpdate()
     {
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
